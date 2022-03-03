@@ -1,0 +1,18 @@
+server:
+  port: 3333
+
+spring:
+  data:
+    maria:
+      jdbc-url: jdbc:mariadb://rds-mariadb.cbzlltnphevs.us-east-1.rds.amazonaws.com:3306/unithon8th?useUnicode=yes&characterEncoding=UTF-8
+      driver-class-name: org.mariadb.jdbc.Driver
+      username: admin
+      password: Lsh6451217
+  jpa:
+    properties:
+      hibernate:
+        #show_sql: true
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    generate-ddl: true
