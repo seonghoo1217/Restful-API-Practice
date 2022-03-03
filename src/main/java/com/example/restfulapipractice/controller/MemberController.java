@@ -38,7 +38,7 @@ public class MemberController {
     @GetMapping("/insert") // CREATE
     public Member insert(){
         return memberRepository.save(
-                new Member(1L,"Leeseongho", 24, "하남",new Date())
+                new Member("Leeseongho", 24, "하남",new Date())
         );
     }
 }

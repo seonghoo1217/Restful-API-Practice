@@ -24,8 +24,7 @@ public class Member {
     @CreationTimestamp
     private Date createdAt;
 
-    public Member(Long id,String name, int age, String address,Date date){
-        this.id=id;
+    public Member(String name, int age, String address,Date date){
         this.createdAt=date;
         this.name = name;
         this.age = age;
