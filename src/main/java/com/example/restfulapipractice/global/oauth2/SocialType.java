@@ -1,4 +1,4 @@
-package com.example.restfulapipractice.model;
+package com.example.restfulapipractice.global.oauth2;
 
 import org.springframework.http.HttpMethod;
 

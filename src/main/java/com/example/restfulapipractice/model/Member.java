@@ -1,5 +1,6 @@
 package com.example.restfulapipractice.model;
 
+import com.example.restfulapipractice.global.oauth2.SocialType;
 import lombok.*;
 
 import javax.persistence.*;

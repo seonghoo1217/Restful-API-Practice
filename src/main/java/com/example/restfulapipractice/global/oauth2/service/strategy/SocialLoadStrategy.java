@@ -1,4 +1,4 @@
-package com.example.restfulapipractice.configuration;
+package com.example.restfulapipractice.global.oauth2.service.strategy;
 
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpEntity;

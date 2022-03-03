@@ -1,6 +1,6 @@
-package com.example.restfulapipractice.configuration;
+package com.example.restfulapipractice.global.oauth2.service.strategy;
 
-import com.example.restfulapipractice.model.SocialType;
+import com.example.restfulapipractice.global.oauth2.SocialType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;

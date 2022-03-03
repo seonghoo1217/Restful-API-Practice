@@ -1,6 +1,11 @@
-package com.example.restfulapipractice.configuration;
+package com.example.restfulapipractice.global.oauth2.service;
 
-import com.example.restfulapipractice.model.SocialType;
+import com.example.restfulapipractice.global.oauth2.SocialType;
+import com.example.restfulapipractice.global.oauth2.authentication.AccessTokenSocialTypeToken;
+import com.example.restfulapipractice.global.oauth2.authentication.OAuth2UserDetails;
+import com.example.restfulapipractice.global.oauth2.service.strategy.KakaoLoadStrategy;
+import com.example.restfulapipractice.global.oauth2.service.strategy.NaverLoadStrategy;
+import com.example.restfulapipractice.global.oauth2.service.strategy.SocialLoadStrategy;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

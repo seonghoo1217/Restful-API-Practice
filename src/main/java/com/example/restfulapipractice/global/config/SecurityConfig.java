@@ -1,5 +1,6 @@
-package com.example.restfulapipractice.configuration;
+package com.example.restfulapipractice.global.config;
 
+import com.example.restfulapipractice.global.oauth2.filter.OAuth2AccessTokenAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

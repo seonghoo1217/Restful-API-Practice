@@ -1,7 +1,7 @@
 package com.example.restfulapipractice.repository;
 
 import com.example.restfulapipractice.model.Member;
-import com.example.restfulapipractice.model.SocialType;
+import com.example.restfulapipractice.global.oauth2.SocialType;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

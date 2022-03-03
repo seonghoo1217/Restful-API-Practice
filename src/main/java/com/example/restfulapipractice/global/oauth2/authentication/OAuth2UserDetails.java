@@ -1,6 +1,6 @@
-package com.example.restfulapipractice.configuration;
+package com.example.restfulapipractice.global.oauth2.authentication;
 
-import com.example.restfulapipractice.model.SocialType;
+import com.example.restfulapipractice.global.oauth2.SocialType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import org.springframework.security.core.GrantedAuthority;
