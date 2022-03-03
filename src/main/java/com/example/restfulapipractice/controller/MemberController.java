@@ -1,23 +1,15 @@
 package com.example.restfulapipractice.controller;
 
-import com.example.restfulapipractice.model.Member;
-import com.example.restfulapipractice.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
 
 @RestController
 @RequestMapping("/member")
 @RequiredArgsConstructor
 public class MemberController {
 
-    private final MemberRepository memberRepository;
+    /*private final MemberRepository memberRepository;
 
     @GetMapping("/test")
     public Member memberTest(){
@@ -40,5 +32,5 @@ public class MemberController {
         return memberRepository.save(
                 new Member("Leeseongho", 24, "하남",new Date())
         );
-    }
+    }*/
 }

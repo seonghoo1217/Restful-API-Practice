@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = '11'
 
 repositories {
     mavenCentral()
@@ -25,7 +25,11 @@ dependencies {
     // https://mvnrepository.com/artifact/com.zaxxer/HikariCP
     implementation group: 'com.zaxxer', name: 'HikariCP', version: '4.0.3'
 
+    dependencies { implementation 'com.google.code.gson:gson:2.8.7' }
 
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+    testImplementation 'org.springframework.security:spring-security-test'
 }
 
 tasks.named('test') {

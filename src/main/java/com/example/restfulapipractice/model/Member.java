@@ -1,33 +1,33 @@
 package com.example.restfulapipractice.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.hibernate.annotations.CreationTimestamp;
+import lombok.*;
 
 import javax.persistence.*;
-import java.util.Date;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Getter
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Entity
-@Table(name = "member")
+@AllArgsConstructor
+@Builder
 public class Member {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
-    private long id;
-    private String name;
-    private int age;
-    private String address;
-    @CreationTimestamp
-    private Date createdAt;
 
-    public Member(String name, int age, String address,Date date){
-        this.createdAt=date;
-        this.name = name;
-        this.age = age;
-        this.address = address;
-    }
+    @Id @GeneratedValue
+    @Column(name = "member_id")
+    private Long id;
+
+    private String username;
+
+    private String password;
+
+    private String name;
+
+
+    private String socialId;
+
+    @Enumerated(EnumType.STRING)
+    private SocialType socialType;
+
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
 }
